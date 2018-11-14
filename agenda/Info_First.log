@@ -1,0 +1,174 @@
+[Execute]2018/10/31 22:53:46 root.go:41: [query]
+[Execute]2018/10/31 22:54:30 root.go:41: [login -n a -c 123]
+[Execute]2018/10/31 22:54:30 login.go:35: [login -n a -c 123]
+[Execute]2018/10/31 22:54:56 root.go:41: [login -n=a -c=123]
+[Execute]2018/10/31 22:54:56 login.go:35: [login -n=a -c=123]
+[Execute]2018/10/31 22:57:33 root.go:41: [login -n a -c 123]
+[Execute]2018/10/31 22:57:33 login.go:35: [login -n a -c 123]
+[Execute]2018/10/31 22:57:46 root.go:41: [login -n alice -c 123]
+[Execute]2018/10/31 22:57:46 login.go:35: [login -n alice -c 123]
+[Execute]2018/10/31 22:58:13 root.go:41: [regist]
+[Execute]2018/10/31 22:58:39 root.go:41: [login -n alice -c aaa]
+[Execute]2018/10/31 22:58:39 login.go:35: [login -n alice -c aaa]
+[Execute]2018/10/31 22:59:08 root.go:41: [listAllMeeting]
+[Execute]2018/10/31 22:59:36 root.go:41: [creat]
+[Execute]2018/10/31 23:08:54 root.go:41: [creat -m wu -s 2018/10/15 -e 2018/10/31 -p wulianghao]
+[Result]2018/10/31 23:08:54 createMeeting.go:49: Fail to create meeting
+[Execute]2018/10/31 23:09:11 root.go:41: [creat -m wu -s 2018-10-15 -e 2018-10-31 -p wulianghao]
+[Result]2018/10/31 23:09:11 createMeeting.go:49: Fail to create meeting
+[Execute]2018/10/31 23:12:55 root.go:41: [creat -m wu -s 2018-10-15-11-20 -e 2018-10-31-11-20 -p wulianghao]
+[Result]2018/10/31 23:12:55 createMeeting.go:49: Fail to create meeting
+[Execute]2018/10/31 23:13:19 root.go:41: [creat -m wu -s 2018-10-15/11:20 -e 2018-10-31/11:20 -p wulianghao]
+[Result]2018/10/31 23:13:19 createMeeting.go:49: Fail to create meeting
+[Execute]2018/10/31 23:13:35 root.go:41: [regist]
+[Execute]2018/10/31 23:14:00 root.go:41: [regist -n wulianghao -c 132 -e 132@qq.com -t 123]
+[Execute]2018/10/31 23:14:07 root.go:41: [creat -m wu -s 2018-10-15/11:20 -e 2018-10-31/11:20 -p wulianghao]
+[Result]2018/10/31 23:14:07 createMeeting.go:38: Fail, please log in
+[Result]2018/10/31 23:14:07 createMeeting.go:46: Create meeting successfully
+[Execute]2018/10/31 23:14:25 root.go:41: [login -n alice -c 123]
+[Execute]2018/10/31 23:14:25 login.go:35: [login -n alice -c 123]
+[Execute]2018/10/31 23:14:32 root.go:41: [login -n alice -c aaa]
+[Execute]2018/10/31 23:14:32 login.go:35: [login -n alice -c aaa]
+[Execute]2018/10/31 23:14:36 root.go:41: [creat -m wu -s 2018-10-15/11:20 -e 2018-10-31/11:20 -p wulianghao]
+[Result]2018/10/31 23:14:36 createMeeting.go:49: Fail to create meeting
+[Execute]2018/10/31 23:14:49 root.go:41: [query]
+[Execute]2018/10/31 23:14:59 root.go:41: [logout]
+[Result]2018/10/31 23:14:59 logout.go:37: Log out successfully
+[Execute]2018/10/31 23:15:20 root.go:41: [login -n wulainghao -c 123]
+[Execute]2018/10/31 23:15:20 login.go:35: [login -n wulainghao -c 123]
+[Execute]2018/10/31 23:15:54 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-31/12:00 -p alice]
+[Result]2018/10/31 23:15:54 createMeeting.go:38: Fail, please log in
+[Result]2018/10/31 23:15:54 createMeeting.go:49: Fail to create meeting
+[Execute]2018/10/31 23:16:53 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-31/12:00 -p alice]
+[Result]2018/10/31 23:16:53 createMeeting.go:38: Fail, please log in
+[Result]2018/10/31 23:16:53 createMeeting.go:46: Create meeting successfully
+[Execute]2018/10/31 23:18:46 root.go:41: [query]
+[Result]2018/10/31 23:18:46 queryMeeting.go:34: Fail, please log in
+[Execute]2018/10/31 23:20:12 root.go:41: [logout]
+[Result]2018/10/31 23:20:12 logout.go:41: You already logout
+[Execute]2018/10/31 23:20:30 root.go:41: [login -n wulianghao -c 132]
+[Execute]2018/10/31 23:20:30 login.go:35: [login -n wulianghao -c 132]
+[Execute]2018/10/31 23:20:42 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-31/12:00 -p alice]
+[Result]2018/10/31 23:20:42 createMeeting.go:46: Create meeting successfully
+[Execute]2018/10/31 23:20:53 root.go:41: [query]
+[Execute]2018/10/31 23:21:15 root.go:41: [logout]
+[Result]2018/10/31 23:21:15 logout.go:37: Log out successfully
+[Execute]2018/10/31 23:21:37 root.go:41: [login -n wulianghao -c 132]
+[Execute]2018/10/31 23:21:37 login.go:35: [login -n wulianghao -c 132]
+[Execute]2018/10/31 23:22:58 root.go:41: [add -m test -p wulianghao]
+[Result]2018/10/31 23:22:58 add.go:45: Fail to add participators
+[Execute]2018/10/31 23:23:10 root.go:41: [add -m -p wulianghao]
+[Result]2018/10/31 23:23:10 add.go:45: Fail to add participators
+[Execute]2018/10/31 23:23:24 root.go:41: [add -m test -p wulianghao]
+[Result]2018/10/31 23:23:24 add.go:45: Fail to add participators
+[Execute]2018/10/31 23:23:43 root.go:41: [add -m test -p bob]
+[Result]2018/10/31 23:23:43 add.go:42: Add participators successfully
+[Execute]2018/10/31 23:26:01 root.go:41: [remove -p alice -m test]
+[Result]2018/10/31 23:26:01 remove.go:42: Remove participators successfully
+[Execute]2018/10/31 23:26:30 root.go:41: [clear]
+[Result]2018/10/31 23:26:30 clear.go:39: Clear meeting successfully
+[Execute]2018/10/31 23:27:19 root.go:41: [creat -m happy -s 2018-10-05/12:00 -e 2018-10-15/12:00 -p alice]
+[Result]2018/10/31 23:27:19 createMeeting.go:46: Create meeting successfully
+[Execute]2018/10/31 23:28:00 root.go:41: [cancel -m test]
+[Result]2018/10/31 23:28:00 cancel.go:40: Cancel meeting successfully
+[Execute]2018/10/31 23:58:32 root.go:41: [delete -n wulianghao -c 132]
+[Result]2018/10/31 23:58:32 delete.go:47: Delete this account successfully
+[Execute]2018/10/31 23:59:37 root.go:41: [listAllUser]
+[Execute]2018/10/31 23:59:59 root.go:41: [listAllUser]
+[Result]2018/10/31 23:59:59 listAllUsers.go:35: Fail, please log in
+[Execute]2018/11/01 00:08:40 root.go:41: [listAllUser]
+[Result]2018/11/01 00:08:40 listAllUsers.go:35: Fail, please log in
+[Execute]2018/11/01 00:09:27 root.go:41: [regist -n alice -c aaa -e 123@qq.com -t 123]
+[Execute]2018/11/01 00:09:39 root.go:41: [regist -n bob -c bbb -e 123@qq.com -t 123]
+[Execute]2018/11/01 00:09:50 root.go:41: [regist -n calvin -c ccc -e 123@qq.com -t 123]
+[Execute]2018/11/01 00:11:01 root.go:41: [login -n alice -c aaa]
+[Execute]2018/11/01 00:11:01 login.go:35: [login -n alice -c aaa]
+[Execute]2018/11/01 00:11:14 root.go:41: [login -n alice -c bbb]
+[Execute]2018/11/01 00:11:14 login.go:35: [login -n alice -c bbb]
+[Execute]2018/11/01 00:11:36 root.go:41: [logout]
+[Result]2018/11/01 00:11:36 logout.go:37: Log out successfully
+[Execute]2018/11/01 00:11:59 root.go:41: [creat]
+[Result]2018/11/01 00:11:59 createMeeting.go:38: Fail, please log in
+[Execute]2018/11/01 00:12:31 root.go:41: [login -n alice -c aaa]
+[Execute]2018/11/01 00:12:31 login.go:35: [login -n alice -c aaa]
+[Execute]2018/11/01 00:13:03 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p bob]
+[Result]2018/11/01 00:13:03 createMeeting.go:46: Create meeting successfully
+[Execute]2018/11/01 00:13:12 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p alice]
+[Result]2018/11/01 00:13:12 createMeeting.go:49: Fail to create meeting
+[Execute]2018/11/01 00:13:29 root.go:41: [creat -m test2 -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p alice]
+[Result]2018/11/01 00:13:29 createMeeting.go:49: Fail to create meeting
+[Execute]2018/11/01 00:13:41 root.go:41: [creat -m test2 -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p alice]
+[Result]2018/11/01 00:13:41 createMeeting.go:49: Fail to create meeting
+[Execute]2018/11/01 00:14:03 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p bob]
+[Result]2018/11/01 00:14:03 createMeeting.go:46: Create meeting successfully
+[Execute]2018/11/01 00:14:21 root.go:41: [creat -m test2 -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p alice]
+[Result]2018/11/01 00:14:21 createMeeting.go:49: Fail to create meeting
+[Execute]2018/11/01 00:14:51 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p alice]
+[Result]2018/11/01 00:14:51 createMeeting.go:49: Fail to create meeting
+[Execute]2018/11/01 00:14:56 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p bob]
+[Result]2018/11/01 00:14:56 createMeeting.go:46: Create meeting successfully
+[Execute]2018/11/01 00:17:14 root.go:41: [cancel -m test]
+[Result]2018/11/01 00:17:14 cancel.go:40: Cancel meeting successfully
+[Execute]2018/11/01 00:17:24 root.go:41: [creat -m test -s 2018-10-15/12:00 -e 2018-10-20/12:00 -p bob]
+[Result]2018/11/01 00:17:24 createMeeting.go:46: Create meeting successfully
+[Execute]2018/11/01 00:17:51 root.go:41: [add -p calvin -m test]
+[Result]2018/11/01 00:17:51 add.go:42: Add participators successfully
+[Execute]2018/11/01 00:18:12 root.go:41: [remove -p bob -m test]
+[Result]2018/11/01 00:18:12 remove.go:42: Remove participators successfully
+[Execute]2018/11/01 00:18:31 root.go:41: [query]
+[Execute]2018/11/01 00:19:40 root.go:41: [query -s 2018-09-20/12:00 -e 2019-09-20/12:00]
+[Result]2018/11/01 00:19:40 queryMeeting.go:42: Query meeting successfully
+[Execute]2018/11/01 00:20:10 root.go:41: [creat -m test2 -s 2019-10-15/12:00 -e 2019-10-20/12:00 -p alice]
+[Result]2018/11/01 00:20:10 createMeeting.go:49: Fail to create meeting
+[Execute]2018/11/01 00:20:19 root.go:41: [creat -m test2 -s 2019-10-15/12:00 -e 2019-10-20/12:00 -p bob]
+[Result]2018/11/01 00:20:19 createMeeting.go:46: Create meeting successfully
+[Execute]2018/11/01 00:20:46 root.go:41: [query -s 2018-09-20/12:00 -e 2019-09-20/12:00]
+[Result]2018/11/01 00:20:46 queryMeeting.go:42: Query meeting successfully
+[Execute]2018/11/01 00:21:11 root.go:41: [clear]
+[Result]2018/11/01 00:21:11 clear.go:39: Clear meeting successfully
+[Execute]2018/11/01 00:21:36 root.go:41: [logout]
+[Result]2018/11/01 00:21:36 logout.go:37: Log out successfully
+[Execute]2018/11/01 00:21:46 root.go:41: [login -n bob -c bbb]
+[Execute]2018/11/01 00:21:46 login.go:35: [login -n bob -c bbb]
+[Execute]2018/11/01 00:21:57 root.go:41: [login -n bob -c bbb]
+[Execute]2018/11/01 00:21:57 login.go:35: [login -n bob -c bbb]
+[Execute]2018/11/01 00:22:07 root.go:41: [logout]
+[Result]2018/11/01 00:22:07 logout.go:37: Log out successfully
+[Execute]2018/11/01 00:22:12 root.go:41: [login -n bob -c bbb]
+[Execute]2018/11/01 00:22:12 login.go:35: [login -n bob -c bbb]
+[Execute]2018/11/01 00:22:22 root.go:41: [creat -m test2 -s 2019-10-15/12:00 -e 2019-10-20/12:00 -p alice]
+[Result]2018/11/01 00:22:22 createMeeting.go:46: Create meeting successfully
+[Execute]2018/11/01 00:22:49 root.go:41: [logout]
+[Result]2018/11/01 00:22:49 logout.go:37: Log out successfully
+[Execute]2018/11/01 00:23:01 root.go:41: [login -n alice -c aaa]
+[Execute]2018/11/01 00:23:01 login.go:35: [login -n alice -c aaa]
+[Execute]2018/11/01 00:23:45 root.go:41: [quit -m test2]
+[Result]2018/11/01 00:23:45 quit.go:44: Fail to quit meeting
+[Execute]2018/11/01 00:24:47 root.go:41: [login -n bob -c bbb]
+[Execute]2018/11/01 00:24:47 login.go:35: [login -n bob -c bbb]
+[Execute]2018/11/01 00:24:56 root.go:41: [logout]
+[Result]2018/11/01 00:24:56 logout.go:37: Log out successfully
+[Execute]2018/11/01 00:25:13 root.go:41: [login -n bob -c bb]
+[Execute]2018/11/01 00:25:13 login.go:35: [login -n bob -c bb]
+[Execute]2018/11/01 00:25:15 root.go:41: [login -n bob -c bbb]
+[Execute]2018/11/01 00:25:15 login.go:35: [login -n bob -c bbb]
+[Execute]2018/11/01 00:26:04 root.go:41: [quit -m test2]
+[Result]2018/11/01 00:26:04 quit.go:44: Fail to quit meeting
+[Execute]2018/11/01 00:26:42 root.go:41: [logout]
+[Result]2018/11/01 00:26:42 logout.go:37: Log out successfully
+[Execute]2018/11/01 00:26:57 root.go:41: [login -n alice -c aaa]
+[Execute]2018/11/01 00:26:57 login.go:35: [login -n alice -c aaa]
+[Execute]2018/11/01 00:27:07 root.go:41: [quit -m test2]
+[Result]2018/11/01 00:27:07 quit.go:44: Fail to quit meeting
+[Execute]2018/11/01 00:29:47 root.go:41: [listAllMeeting]
+[Execute]2018/11/01 00:29:57 root.go:41: [logout]
+[Result]2018/11/01 00:29:57 logout.go:37: Log out successfully
+[Execute]2018/11/01 00:30:07 root.go:41: [login -n bob -c bbb]
+[Execute]2018/11/01 00:30:07 login.go:35: [login -n bob -c bbb]
+[Execute]2018/11/01 00:30:15 root.go:41: [listAllMeeting]
+[Result]2018/11/01 00:30:15 listAllMeeting.go:39: List meeting successfully
+[Execute]2018/11/01 00:30:52 root.go:41: [listAllUser]
+[Execute]2018/11/01 00:31:28 root.go:41: [delete -n alice -c aaa]
+[Result]2018/11/01 00:31:28 delete.go:44: access denied
+[Execute]2018/11/01 00:31:41 root.go:41: [delete -n bob -c bbb]
+[Result]2018/11/01 00:31:41 delete.go:47: Delete this account successfully
